@@ -8,7 +8,7 @@ let drawMap = (latitude, longitude) => {
     var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
     return map;
-}
+};
 
 
 let markMap = (latitude, longitude, map) => {
@@ -20,11 +20,11 @@ let markMap = (latitude, longitude, map) => {
     });
 
     marker.setMap(map);
-}
+};
 
 // positions는 객체 { latitue, longitude } 배열
-let multiMarkMap = (positions, map) {
+let multiMarkMap = (positions, map) => {
     for (let position of positions) {
         markMap(position.latitude, position.longitude, map);
     }
-}
+};
