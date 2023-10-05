@@ -52,7 +52,7 @@ let markByAddr = (addr) => {
 
 let markByRouteCd = (exKey, routeCd) => {
     locationInfoUrl = "http://data.ex.co.kr/openapi/restinfo/hiwaySvarInfoList";
-    locationInfoUrl += "?key=" + exKey + "&'type=json";
+    locationInfoUrl += "?key=" + exKey + "&type=json";
     locationInfoUrl += "&routeCd=" + routeCd;
 
     let xhr = new XMLHttpRequest();
