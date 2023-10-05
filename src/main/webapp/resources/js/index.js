@@ -71,6 +71,9 @@ let markByRouteCd = (exKey, routeCd) => {
 
         let positions = [];
         for (let r of result.list) {
+            if (r.svarNm.endsWith("쉼터") || r.svarNm.endsWith("주유소") || r.svarNm.startsWith("테스트")) {
+                continue;
+            }
             markByAddr(r.svarAddr);
         }
     }
